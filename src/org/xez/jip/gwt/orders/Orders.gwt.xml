@@ -1,0 +1,24 @@
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.5.0//EN"
+        "http://gwtproject.org/doctype/2.5.0/gwt-module.dtd">
+<module rename-to="gwt">
+
+    <!-- Inherit the core Web Toolkit stuff.                  -->
+    <inherits name='com.google.gwt.user.User'/>
+
+    <inherits name='com.google.gwt.user.theme.clean.Clean'/>
+
+    <!-- Specify the app entry point class.                   -->
+    <entry-point class='org.xez.jip.gwt.orders.client.gwt'/>
+
+    <source path='client'/>
+    <source path='shared'/>
+
+    <!-- allow Super Dev Mode -->
+    <add-linker name="xsiframe"/>
+
+
+
+    <!-- Specify the app servlets.                   -->
+    <servlet path='/orders' class='org.xez.jip.gwt.orders.server.OrdersServiceImpl'/>
+
+</module>
